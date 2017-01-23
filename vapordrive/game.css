@@ -21,7 +21,7 @@ body
 {
     text-shadow: 1px 1px black;
 	position: static;
-	display: flex;
+	display: block;
 	background-image: url('img/gamebg.jpg');
 	height: 100vh;
 
