@@ -23,13 +23,12 @@ body
 	display: flex;
 	background-image: url('img/aarrebgblur.jpg');
 	height: 100vh;
-
+    text-shadow: 2px 2px rgb(60,80,60);
 }
 .menu-item
 {
-	display: inline-block;
 	width: 300px;
-	height: 300px;
+	height: auto;
 	padding:10px;
 	margin: 10px;
 	float: left;
