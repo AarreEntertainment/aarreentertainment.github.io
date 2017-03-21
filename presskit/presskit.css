@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee|Montserrat');
+body
+{
+	font-family: 'Montserrat';
+	background-color: grey;
+	color: white;
+	height: auto;
+	margin: 0px;
+}
+.column
+{
+	text-align: left;
+	display: inline-block;
+	width: 40%;
+	padding: 40px;
+	height: auto;
+	vertical-align:top;
+}
+.bordered-element
+{
+	clear: right;
+	display: block;
+	text-align: center;
+	padding: 20px;
+	margin: auto;
+	border: 1px solid white;
+}
+
+.image-content-1
+{
+    text-shadow: 1px 1px black;
+	position: static;
+	display: block;
+	background-image: url('img/pkimage.png');
+	height: 100vh;
+
+	background-position: left;
+}
+
+.intrinsic-container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	position: relative;
+	height:0;
+	overflow:hidden;
+	padding-bottom: 30%;
+}
+.intrinsic-container iframe
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.about
+{
+	background-color: rgb(60,60,60);
+}
+.content
+{
+	text-align: center;
+	position: static;
+	display: block;
+
+	padding: 40px;
+}
+
+.privacy-policy
+{
+	min-height: 100vh;
+	position: static;
+	display: block;
+	background-color: rgb(100,80,100);
+	padding: 40px;
+}
+
+a
+{
+	color: rgb(180,180,255);
+}
+h1, h2, h3 {
+	color: white;
+	font-family: 'Bungee', cursive;
+}
+h3
+{font-size: 1.2em}
+
+h1{
+	font-size: 3.5em;
+
+}
+
+h2{
+	font-size: 2em;
+}
+
+p, h4{
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 768px)
+{
+	.column
+	{
+		display: inline-block;
+		width: 90%;
+		height: 400px;
+		vertical-align:middle;
+	}
+		.intrinsic-container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	position: relative;
+	height:0;
+	overflow:hidden;
+	padding-bottom: 56.25%;}
+
+	.bordered-element
+{
+	display: block;
+	text-align: center;
+	padding: 20px;
+	margin: auto;
+	border: 1px solid white;
+}
+	h1{
+		font-size: 1.5em;
+	}
+	h2{
+		font-size: 1em;
+	}
+
+}
