@@ -17,13 +17,19 @@ body
 	border: 1px solid white;
 }
 
+.socialMedia
+{
+	max-width: 64px;
+	min-width: 16px;
+}
+
 .image-content-1
 {
 	position: static;
 	display: flex;
-	background-image: url('img/aarrebgblur.jpg');
+	background-image: url('img/aebg.jpg');
 	height: 100vh;
-    text-shadow: 2px 2px rgb(60,80,60);
+    text-shadow: 2px 2px rgb(60,60,60);
 }
 .menu-item
 {
@@ -38,14 +44,14 @@ body
 {
 	position: static;
 	display: flex;
-	background-color: rgb(60,80,60);
+	background-color: rgb(20,20,20);
 	padding: 40px;
 }
 .blog-content
 {
 	position: static;
 	display: block;
-	background-color: rgb(80,100,80);
+	background-color: rgb(70,70,70);
 	padding: 40px;
 }
 .rssincl-content
