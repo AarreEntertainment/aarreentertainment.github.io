@@ -4,6 +4,20 @@ body {
 	font-family: Verdana, sans-serif;
 }
 
+a:visited {
+	color: #AAAAFF;
+}
+
+
+a {
+	color: #AAAAFF;
+
+}
+
+a:hover {
+	color: #AAAACC;
+}
+
 .banner {
 	background-color: #101020;
 	padding: 40px;
@@ -28,11 +42,22 @@ body {
 	text-align: center;
 	font-family: 'Trebuchet MS', sans-serif;
 	font-size: 2vw;
+	text-decoration: none;
+
 
 }
+
+.selected {
+	border: 1px solid white;
+}
+
 .menuitem:hover {
 	background-color: #303040
 
+}
+
+.menuitem:visited {
+	color: #CCCC99;
 }
 
 article {
