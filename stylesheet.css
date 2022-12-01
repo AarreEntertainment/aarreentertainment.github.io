@@ -1,6 +1,48 @@
-body
-{
+body {
 	background-color: #000010;
-	color: #FFFFCC
+	color: #FFFFCC;
+	font-family: Verdana, sans-serif;
 }
 
+.banner {
+	background-color: #101020;
+	padding: 40px;
+}
+.flex-container {
+	display: flex;
+	flex-direction: row;
+  }
+
+.logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+}
+
+.menuitem {
+	background-color: #252535;
+	padding: 10px;
+	flex-grow: 1;
+	color: #CCCC99;
+	text-align: center;
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size: 2vw;
+
+}
+.menuitem:hover {
+	background-color: #303040
+
+}
+
+article {
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.menu {
+	background-color: #202030;
+
+}
