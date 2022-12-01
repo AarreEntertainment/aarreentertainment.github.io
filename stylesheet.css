@@ -11,7 +11,6 @@ a:visited {
 
 a {
 	color: #AAAAFF;
-
 }
 
 a:hover {
@@ -19,10 +18,18 @@ a:hover {
 }
 
 .banner {
+	display: flex;
+	flex-direction: column;
 	background-color: #101020;
+}
+
+.logocontainer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	padding: 40px;
 }
-.flex-container {
+.menubar {
 	display: flex;
 	flex-direction: row;
   }
@@ -32,8 +39,30 @@ a:hover {
 	margin-left: auto;
 	margin-right: auto;
 	width: 20%;
+	height: auto;
+	padding-top 5px;
+	padding-bottom: 5px;
 }
+@media only screen and (max-width: 768px) {
+	.banner {
+		flex-direction: row;
+		padding: 0px;
 
+	}
+	.logo {
+		width: 80%;
+		padding-top: 20px;
+	}
+
+	.menubar {
+		flex-direction: column;
+		width:50%;
+	}
+	.logocontainer{
+		padding: 10px;
+		margin-bottom: auto;
+	}
+  }
 .menuitem {
 	background-color: #252535;
 	padding: 10px;
@@ -41,7 +70,6 @@ a:hover {
 	color: #CCCC99;
 	text-align: center;
 	font-family: 'Trebuchet MS', sans-serif;
-	font-size: 2vw;
 	text-decoration: none;
 
 
