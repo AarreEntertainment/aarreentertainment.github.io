@@ -7,7 +7,9 @@ body {
 a:visited {
 	color: #AAAAFF;
 }
-
+._df_book {
+	background-color: #000010;
+}
 
 a {
 	color: #AAAAFF;
