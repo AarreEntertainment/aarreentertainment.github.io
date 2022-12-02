@@ -13,6 +13,12 @@
 
   <!-- Icons Stylesheet -->
   <link href="dflip/css/themify-icons.min.css" rel="stylesheet" type="text/css">
+  <script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const issue = urlParams.get('issuename')
+  </script>
+
 
 </head>
 <body>
@@ -25,7 +31,7 @@
     <a class = "menuitem" href="contact.html">Contact & Socials</a>
   </div>
 </div>
-<div class="_df_book" source="vampire_1.pdf"></div>
+<div class="_df_book" source="issue"></div>
 
 
 <!-- jQuery  -->
