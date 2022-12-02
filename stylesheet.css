@@ -45,11 +45,18 @@ a:hover {
 	padding-top 5px;
 	padding-bottom: 5px;
 }
+
+img {
+	max-width: 50%;
+}
 @media only screen and (max-width: 768px) {
 	.banner {
 		flex-direction: row;
 		padding: 0px;
 
+	}
+	img {
+		max-width: 50%;
 	}
 	.logo {
 		width: 80%;
@@ -63,6 +70,10 @@ a:hover {
 	.logocontainer{
 		padding: 10px;
 		margin-bottom: auto;
+	}
+	article {
+		padding-left: 3%;
+		padding-right: 3%;
 	}
   }
 .menuitem {
@@ -91,8 +102,8 @@ a:hover {
 }
 
 article {
-	padding-left: 10%;
-	padding-right: 10%;
+	padding-left: 20%;
+	padding-right: 20%;
 	padding-top: 5%;
 	padding-bottom: 5%;
 }
