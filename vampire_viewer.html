@@ -30,6 +30,7 @@
   </div>
 </nav>
 <main>
+  <a href="" id="articlelink">The reader sucks on mobile. Download VAMPIRE instead from this link</a>
   <div id = "book" class="_df_book" source=""></div>
 </main>
 
@@ -37,6 +38,7 @@
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   const issue = urlParams.get('issuename')
+  document.getElementById("articlelink").setAttribute("href", issue)
   document.getElementById("book").setAttribute("source", issue)
 </script>
 <!-- jQuery  -->
