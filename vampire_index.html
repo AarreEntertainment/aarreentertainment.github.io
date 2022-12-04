@@ -1,27 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Aarre</title>
 	<link href = "stylesheet.css" rel="stylesheet">
 </head>
 <body>
-<div class = "banner">
-	<div class = "logo_container">
-		<img alt = "The Aarre Entertainment white flower stencil logo on a dark background" class="logo" src="img/aarrelogo.png"  />
+<nav aria-label="Main">
+	<div class = "banner">
+		<div class = "logocontainer">
+			<img alt = "The Aarre Entertainment white flower stencil logo on a dark background" class="logo" src="img/aarrelogo.png"  />
+		</div>
+		<div class="menubar">
+			<button class = "menubutton" onclick="toggleMenu()">Menu</button>
+			<a class = "menuitem hidden" href="index.html">Home</a>
+			<a class = "menuitem hidden" href="games.html">Games</a>
+			<a class = "menuitem hidden" href="music.html"> Music</a>
+			<a class = "menuitem hidden selected" href="vampire_index.html"> Vampire Zine</a>
+			<a class = "menuitem hidden" href="contact.html">Contact & Socials</a>
+		</div>
 	</div>
-	<div class="menubar">
-		<a class = "menuitem" href="index.html">Home</a>
-		<a class = "menuitem" href="games.html">Games</a>
-		<a class = "menuitem" href="music.html"> Music</a>
-		<a class = "menuitem selected" href="vampire_index.html"> Vampire Zine</a>
-		<a class = "menuitem" href="contact.html">Contact & Socials</a>
-	</div>
-</div>
-<article>
-	<a href ="vampire_viewer.html?issuename=vampire_1.pdf">Vampire issue 1/2022</a>
-</article>
+</nav>
+<header>
+	<h1>VAMPIRE</h1>
+</header>
+<main>
+	<article>
+		<a href ="vampire_viewer.html?issuename=vampire_1.pdf">Vampire issue 1/2022</a>
+	</article>
+</main>
+<footer>
+
+</footer>
+<script>
+	function toggleMenu() {
+		var elems = document.getElementsByClassName('menuitem')
+		for (var i = 0; i<elems.length;i++)
+		{
+			elems[i].classList.toggle("hidden");
+		}
+		
+	}
+</script>
 </body>
 
 </html>

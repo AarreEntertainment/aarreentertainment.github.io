@@ -20,6 +20,7 @@ a:hover {
 }
 
 .banner {
+	flex-wrap: wrap;
 	display: flex;
 	flex-direction: column;
 	background-color: #101020;
@@ -42,8 +43,8 @@ a:hover {
 	margin-right: auto;
 	width: 20%;
 	height: auto;
-	padding-top 5px;
-	padding-bottom: 5px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
 img {
@@ -60,11 +61,52 @@ article {
 	visibility: hidden;
 }
 
+.menuitem, .menubutton {
+	font-size: 12pt;
+	background-color: #252535;
+	padding: 10px;
+	flex-grow: 1;
+	color: #CCCC99;
+	text-align: center;
+	font-family: 'Trebuchet MS', sans-serif;
+	text-decoration: none;
+	border: 0px;
+}
+
+.menubutton {
+	padding: 0px;
+	flex: 0;
+	visibility: hidden;
+}
+
+.hidden {
+	visibility: visible;
+}
+
+.menubar {
+	margin-right: 40px;
+}
+
 @media only screen and (max-width: 768px) {
+	.menubar {
+		margin-right: 0px;
+	}
+	.hidden {
+		visibility: hidden;
+		flex: 0;
+	}
+	.menubutton {
+		visibility: visible;
+	}
 	#articlelink {
 		visibility: visible;
 	}
 	.banner {
+		background-image: url("img/aarrelogo.png");
+		background-repeat: no-repeat;
+		background-size: 40%;
+		background-position-y: center;
+
 		flex-direction: row;
 		padding: 0px;
 
@@ -79,39 +121,31 @@ article {
 
 	.menubar {
 		flex-direction: column;
-		width:50%;
+		width:80%;
 	}
 	.logocontainer{
-		padding: 10px;
-		margin-bottom: auto;
+		padding: 0px;
+		visibility: hidden;
+		flex: 0;
 	}
 	article {
 		padding-left: 3%;
 		padding-right: 3%;
 	}
   }
-.menuitem {
-	background-color: #252535;
-	padding: 10px;
-	flex-grow: 1;
-	color: #CCCC99;
-	text-align: center;
-	font-family: 'Trebuchet MS', sans-serif;
-	text-decoration: none;
 
 
-}
 
 .selected {
 	border: 1px solid white;
 }
 
-.menuitem:hover {
+.menuitem, .menubutton:hover {
 	background-color: #303040;
 
 }
 
-.menuitem:visited {
+.menuitem, .menubutton:visited {
 	color: #CCCC99;
 }
 

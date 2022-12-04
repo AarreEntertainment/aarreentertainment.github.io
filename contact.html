@@ -7,21 +7,47 @@
 	<link href = "stylesheet.css" rel="stylesheet">
 </head>
 <body>
-<div class = "banner">
-	<div class = "logo_container">
-		<img alt = "The Aarre Entertainment white flower stencil logo on a dark background" class="logo" src="img/aarrelogo.png"  />
+<nav aria-label="Main">
+	<div class = "banner">
+		<div class = "logocontainer">
+			<img alt = "The Aarre Entertainment white flower stencil logo on a dark background" class="logo" src="img/aarrelogo.png"  />
+		</div>
+		<div class="menubar">
+			<button class = "menubutton" onclick="toggleMenu()">Menu</button>
+			<a class = "menuitem hidden" href="index.html">Home</a>
+			<a class = "menuitem hidden" href="games.html">Games</a>
+			<a class = "menuitem hidden" href="music.html"> Music</a>
+			<a class = "menuitem hidden" href="vampire_index.html"> Vampire Zine</a>
+			<a class = "menuitem hidden selected" href="contact.html">Contact & Socials</a>
+		</div>
 	</div>
-	<div class="menubar">
-		<a class = "menuitem" href="index.html">Home</a>
-		<a class = "menuitem" href="games.html">Games</a>
-		<a class = "menuitem" href="music.html"> Music</a>
-		<a class = "menuitem" href="vampire_index.html"> Vampire Zine</a>
-		<a class = "menuitem selected" href="contact.html">Contact & Socials</a>
-	</div>
-</div>
-<article>
-	Website content
-</article>
+</nav>
+<header>
+	<h1>CONTACT & SOCIALS</h1>
+</header>
+<main>
+	<article>
+		<h2>How to contact me</h2>
+		<p>The easiest way to get in touch with me is via Discord, where my username is Sebastian_#4454</p>
+		<p>I can also be found at <a href = "https://mastodon.gamedev.place/@aarre">Mastodon</a>. I also occasionally use <a href ="https://twitter.com/aarresebu">Twitter</a>.</p>
+		<h2>Tiktok</h2>
+		<p>Yes, this is a thing too.</p>
+		<p><blockquote class="tiktok-embed" cite="https://www.tiktok.com/@aarreentertainment" data-unique-id="aarreentertainment" data-embed-type="creator" style="max-width: 720px; min-width: 288px;" > <section> <a target="_blank" href="https://www.tiktok.com/@aarreentertainment?refer=creator_embed">@aarreentertainment</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script></p>
+	</article>
+</main>
+<footer>
+
+</footer>
+<script>
+	function toggleMenu() {
+		var elems = document.getElementsByClassName('menuitem')
+		for (var i = 0; i<elems.length;i++)
+		{
+			elems[i].classList.toggle("hidden");
+		}
+		
+	}
+</script>
 </body>
 
 </html>
