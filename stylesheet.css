@@ -41,7 +41,7 @@ a:hover {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 20%;
+	width: 15%;
 	height: auto;
 	padding-top: 25px;
 	padding-bottom: 25px;
@@ -60,6 +60,7 @@ article {
 #articlelink {
 	visibility: hidden;
 }
+
 
 .menuitem, .menubutton {
 	font-size: 12pt;
