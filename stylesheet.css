@@ -41,10 +41,10 @@ a:hover {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 15%;
+	width: 25%;
 	height: auto;
-	padding-top: 25px;
-	padding-bottom: 25px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 img {
